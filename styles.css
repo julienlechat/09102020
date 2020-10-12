@@ -1,0 +1,62 @@
+/* GENERAL */
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./fonts/Raleway-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  font-family: "Raleway", "Sans serif";
+}
+.wrapper {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 50px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* HEADER */
+
+header {
+  height: 100px;
+}
+header img {
+  margin-top: 25px;
+  padding: 0 5px;
+  float: left;
+}
+header nav {
+  float: right;
+  display: flex;
+}
+.headerLink {
+  text-align: center;
+  padding: 30px;
+  font-weight: 500;
+  border-top: 3px transparent solid;
+}
+.headerLink[data-active="true"] {
+  color: #0065fc;
+}
+.headerLink:hover {
+  text-align: center;
+  color: #0065fc;
+}
+.headerRegister {
+  padding: 30px;
+  font-weight: 600;
+  color: #0065fc;
+  border-top: 3px transparent solid;
+}
+
+@media screen and (min-width: 601px) {
+  .headerLink[data-active="true"] {
+    border-top: 3px solid #0065fc;
+  }
+  .headerLink:hover {
+    border-top: 3px solid #0065fc;
+  }
+}
