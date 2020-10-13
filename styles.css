@@ -60,6 +60,34 @@ header nav a {
 #introduction {
   margin-top: 30px;
 }
-#introduction p {
+#introduction > p {
   margin-top: 10px;
+}
+#introduction > form {
+  display: flex;
+  margin: 20px 0;
+  height: 45px;
+}
+#introduction > form > i {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 15px 20px;
+  border-radius: 16px 0 0 16px;
+}
+#introduction > form > input {
+  border: 1px solid #f2f2f2;
+  background-color: #fff;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+}
+#introduction > form > button {
+  background-color: #0065fc;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 0 16px 16px 0;
 }
