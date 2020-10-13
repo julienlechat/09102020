@@ -1,62 +1,65 @@
 /* GENERAL */
-
 @font-face {
   font-family: "Raleway";
   src: url("./fonts/Raleway-VariableFont_wght.ttf");
-}
-* {
-  margin: 0;
-  font-family: "Raleway", "Sans serif";
-}
-.wrapper {
-  max-width: 1440px;
-  margin: auto;
-  padding: 0 50px;
 }
 a {
   text-decoration: none;
   color: inherit;
 }
+body {
+  font-family: "Raleway", "Sans serif";
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 50px;
+}
+h1 {
+  margin: 0;
+  font-weight: bold;
+}
+p {
+  margin: 0;
+}
 
 /* HEADER */
-
 header {
   height: 100px;
+  overflow: hidden;
 }
-header img {
-  margin-top: 25px;
-  padding: 0 5px;
+.logo {
+  margin-top: 50px;
+  padding: 0;
   float: left;
 }
 header nav {
   float: right;
   display: flex;
 }
-.headerLink {
-  text-align: center;
-  padding: 30px;
-  font-weight: 500;
+header nav a {
+  margin: auto;
+  padding: 50px 30px;
+}
+.header-Link {
   border-top: 3px transparent solid;
 }
-.headerLink[data-active="true"] {
+.header-Link:first-child {
   color: #0065fc;
+  border-top: 3px solid #0065fc;
 }
-.headerLink:hover {
-  text-align: center;
+.header-Link:hover {
   color: #0065fc;
+  border-top: 3px solid #0065fc;
 }
-.headerRegister {
-  padding: 30px;
-  font-weight: 600;
+.header-Register {
+  font-weight: bold;
   color: #0065fc;
   border-top: 3px transparent solid;
 }
 
-@media screen and (min-width: 601px) {
-  .headerLink[data-active="true"] {
-    border-top: 3px solid #0065fc;
-  }
-  .headerLink:hover {
-    border-top: 3px solid #0065fc;
-  }
+/* INTRODUCTION */
+#introduction {
+  margin-top: 30px;
+}
+#introduction p {
+  margin-top: 10px;
 }
