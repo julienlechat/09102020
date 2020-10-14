@@ -13,9 +13,9 @@
     <header>
         <img class="logo" src="./img/logo/Reservia.svg" alt="Reservia">
             <nav>
-                <a class="header-Link" href="#host">Hébergements</a>
-                <a class="header-Link" href="#activity">Activités</a>
-                <a class="header-Register" href="#">S'inscrire</a>
+                <a class="header-link" href="#host">Hébergements</a>
+                <a class="header-link" href="#activity">Activités</a>
+                <a class="header-register" href="#">S'inscrire</a>
             </nav>
     </header>
 
@@ -28,15 +28,39 @@
             <input type="search" placeholder="Marseille, France">
             <button>Rechercher</button>
         </form>
-        <div>
-            <span>Filtres</span>
-            <span>Économique</span>
-            <span>Familial</span>
-            <span>Romantique</span>
-            <span>Animaux autorisés</span>
+        <div id="categories">
+            <span class="categorie-name">Filtres</span>
+            <div class="cat-structure">
+                <div class="cat-icon">
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+                <span class="cat-titre">Économique</span>
+            </div>
+            <div class="cat-structure">
+                <div class="cat-icon">
+                    <i class="fas fa-child"></i>
+                </div>
+                <span class="cat-titre">Familial</span>
+            </div>
+            <div class="cat-structure">
+                <div class="cat-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <span class="cat-titre">Romantique</span>
+            </div>
+            <div class="cat-structure">
+                <div class="cat-icon">
+                    <i class="fas fa-dog"></i>
+                </div>
+                <span class="cat-titre">Animaux autorisés</span>
+            </div>
         </div>
-        <span>Iconne</span>
-        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        <span id="intro-info">
+            <div class="info-icon">
+                <i class="fas fa-info"></i>
+            </div>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </span>
     </section>
 
     <!-- HOST SECTION -->
