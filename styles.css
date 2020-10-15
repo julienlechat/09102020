@@ -1,8 +1,5 @@
 /* GENERAL */
-@font-face {
-  font-family: "Raleway";
-  src: url("./fonts/Raleway-VariableFont_wght.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 a {
   text-decoration: none;
   color: inherit;
@@ -29,20 +26,16 @@ p {
 /* HEADER */
 header {
   height: 100px;
-  overflow: hidden;
-}
-.logo {
-  margin-top: 50px;
-  padding: 0;
-  float: left;
-}
-header nav {
-  float: right;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-header nav a {
-  margin: auto;
-  padding: 50px 30px;
+header > nav {
+  display: flex;
+  height: 100%;
+}
+header > nav > a {
+  padding: 40px;
 }
 .header-link {
   border-top: 3px transparent solid;
@@ -62,9 +55,6 @@ header nav a {
 }
 
 /* INTRODUCTION */
-#introduction {
-  margin-top: 30px;
-}
 #introduction > p {
   margin-top: 10px;
 }
@@ -82,14 +72,14 @@ header nav a {
   border: 1px solid #f2f2f2;
   background-color: #fff;
   padding-left: 15px;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
   color: black;
 }
 #introduction > form > button {
   background-color: #0065fc;
   color: #fff;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
   padding: 10px 20px;
   border: 0;
@@ -97,8 +87,11 @@ header nav a {
 }
 .categories {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 35px 0;
   height: 50px;
+  max-width: 1000px;
 }
 .categorie-name {
   display: flex;
@@ -106,12 +99,10 @@ header nav a {
   font-weight: bold;
   font-size: 19px;
   padding-left: 10px;
-  padding-right: 20px;
 }
 .cat-structure {
   display: flex;
   align-items: center;
-  margin: 0 15px;
   border: 2px solid #f2f2f2;
   border-radius: 25px;
 }
@@ -159,11 +150,10 @@ header nav a {
   margin-left: 15px;
 }
 
-/* HOST SECTION */
-#host {
+/* HEBERGEMENT SECTION */
+#hebergement {
   display: flex;
   justify-content: space-around;
-  flex-direction: row;
   margin-top: 35px;
 }
 .heberg-principal {
@@ -290,9 +280,6 @@ header nav a {
   box-shadow: 0 0 15px lightgray;
 }
 .heberg-populaire-offre-img {
-  border: 0;
-  padding: 0;
-  width: 100%;
   width: 125px;
 }
 .heberg-populaire-offre-img > img {
@@ -306,11 +293,11 @@ header nav a {
   flex-direction: column;
   justify-content: space-between;
   width: 200px;
-  padding: 12px 5px 5px 20px;
+  padding: 12px 15px 5px 20px;
 }
 .heberg-populaire-offre-titre > span {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 17px;
 }
 .heberg-populaire-offre-titre > p {
   margin-top: 5px;
