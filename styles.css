@@ -23,15 +23,31 @@ p {
   margin: 0;
 }
 
+/* FLEXBOX */
+.f {
+  display: flex;
+}
+.f-vertical {
+  flex-direction: column;
+}
+.f-spaceb {
+  justify-content: space-between;
+}
+.f-align-vertical {
+  align-items: center;
+}
+.f-align-horizontal {
+  justify-content: center;
+}
+.f-wrap {
+  flex-wrap: wrap;
+}
+
 /* HEADER */
 header {
   height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 header > nav {
-  display: flex;
   height: 100%;
 }
 header > nav > a {
@@ -59,7 +75,6 @@ header > nav > a {
   margin-top: 10px;
 }
 #introduction > form {
-  display: flex;
   margin: 20px 0;
   height: 45px;
 }
@@ -86,23 +101,16 @@ header > nav > a {
   border-radius: 0 16px 16px 0;
 }
 .categories {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   margin: 35px 0;
   height: 50px;
   max-width: 1000px;
 }
 .categorie-name {
-  display: flex;
-  align-items: center;
   font-weight: bold;
   font-size: 19px;
   padding-left: 10px;
 }
 .cat-structure {
-  display: flex;
-  align-items: center;
   border: 2px solid #f2f2f2;
   border-radius: 25px;
 }
@@ -111,7 +119,6 @@ header > nav > a {
   color: #0065fc;
 }
 .cat-icon {
-  display: flex;
   height: 20px;
   width: 20px;
   background-color: #deebff;
@@ -129,11 +136,7 @@ header > nav > a {
   padding: 15px;
   padding-right: 20px;
 }
-#intro-info {
-  display: flex;
-}
 .info-icon {
-  display: flex;
   align-items: center;
   justify-content: center;
   height: 25px;
@@ -145,21 +148,16 @@ header > nav > a {
   font-size: 13px;
   color: #0065fc;
 }
-#intro-info > p {
+.info {
   margin: auto;
   margin-left: 15px;
 }
 
 /* HEBERGEMENT SECTION */
-#hebergement {
-  display: flex;
-  justify-content: space-around;
+.hebergement {
   margin-top: 35px;
 }
 .heberg-principal {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background-color: #f2f2f2;
   border-radius: 25px;
   padding: 40px;
@@ -167,14 +165,9 @@ header > nav > a {
   width: 800px;
 }
 .heberg-list-offre {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   height: 425px;
 }
 .heberg-offre {
-  display: flex;
-  flex-direction: column;
   width: 230px;
   height: 180px;
   border-radius: 15px;
@@ -195,9 +188,6 @@ header > nav > a {
   object-fit: cover;
 }
 .heberg-offre-img-desc {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   height: 70px;
   padding: 10px 5px 5px 10px;
 }
@@ -247,31 +237,18 @@ header > nav > a {
   font-size: 18px;
 }
 .heberg-populaire {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background-color: #f2f2f2;
   border-radius: 25px;
   padding: 40px;
   width: 360px;
 }
-.heberg-populaire-titre {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.heberg-populaire-titre > i {
+.heberg-populaire-icon {
   font-size: 24px;
 }
 .heberg-populaire-list-offre {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   height: 450px;
 }
 .heberg-populaire-offre {
-  display: flex;
-  flex-direction: row;
   width: 350px;
   height: 130px;
   border-radius: 15px;
@@ -289,9 +266,6 @@ header > nav > a {
   object-fit: cover;
 }
 .heberg-populaire-offre-img-desc {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   width: 200px;
   padding: 12px 15px 5px 20px;
 }
@@ -324,4 +298,44 @@ header > nav > a {
   > .heberg-populaire-offre-note
   > i:nth-child(-n + 4) {
   color: #0065fc;
+}
+
+/* SECTION ACTIVITY */
+.s-activity {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  height: 500px;
+}
+.activity {
+  height: 450px;
+  width: 330px;
+}
+.activity-contour {
+  box-shadow: 0 0 15px lightgray;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.activity-img {
+  flex: 1;
+  position: relative;
+}
+.activity-img > img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.activity-description {
+  background-color: #fff;
+  font-weight: bold;
+  margin: 20px;
+}
+.activity-60 {
+  height: 250px;
+}
+.activity-40 {
+  height: 160px;
+}
+.activity-50 {
+  height: 200px;
 }
