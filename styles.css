@@ -7,11 +7,14 @@ a {
   text-decoration: none;
   color: inherit;
 }
-body {
-  font-family: "Raleway", "Sans serif";
+main {
+  padding: 0 50px;
   max-width: 1440px;
   margin: auto;
-  padding: 0 50px;
+}
+body {
+  font-family: "Raleway", "Sans serif";
+  margin: auto;
 }
 h1 {
   font-weight: bold;
@@ -369,6 +372,19 @@ header > nav > a {
 .activity-50 {
   height: 200px;
 }
+/* FOOTER SECTION */
+footer {
+  padding: 50px 0;
+  background-color: #f2f2f2;
+  justify-content: space-around;
+}
+.cat-footer {
+  row-gap: 10px;
+}
+.cat-footer > h3 {
+  margin-bottom: 10px;
+}
+
 /* ************* */
 /* MODE TABLETTE */
 /* ************* */
@@ -532,5 +548,11 @@ header > nav > a {
   }
   .activity-50 {
     height: 250px;
+  }
+  /* FOOTER */
+  footer {
+    padding-left: 50px;
+    flex-direction: column;
+    row-gap: 50px;
   }
 }
