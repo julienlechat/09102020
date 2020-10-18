@@ -379,10 +379,10 @@ header > nav > a {
 /* MODE MOBILE */
 /***************/
 @media (max-width: 600px) {
-  *,
-  *:before,
-  *:after {
+  input {
     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
   body {
     padding: 0;
