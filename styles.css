@@ -123,9 +123,14 @@ header > nav > a {
   background-color: #0065fc;
   color: #fff;
 }
+.intro-button2 > button {
+  font-size: 17px;
+}
 .intro-filtre {
   margin: 35px 0;
   max-width: 1000px;
+  row-gap: 15px;
+  column-gap: 15px;
 }
 .intro-filtre-name {
   font-weight: bold;
@@ -435,5 +440,11 @@ header > nav > a {
   }
   .intro-button2 {
     display: flex;
+  }
+  .intro-filtre {
+    justify-content: flex-start;
+  }
+  .intro-filtre-name {
+    flex: 100%;
   }
 }
