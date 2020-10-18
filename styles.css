@@ -394,7 +394,7 @@ footer {
     -moz-appearance: none;
     appearance: none;
   }
-  body {
+  main {
     padding: 0;
   }
   /* HEADER */
