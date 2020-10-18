@@ -186,20 +186,19 @@ header > nav > a {
 .heberg-principal {
   background-color: #f2f2f2;
   border-radius: 25px;
+  row-gap: 20px;
   padding: 40px;
   height: 510px;
+  width: 800px;
 }
 .heberg-list {
-  height: 425px;
-  grid-template-columns: repeat(3, 1fr);
-  display: grid;
-  column-gap: 30px;
-  row-gap: 30px;
+  column-gap: 20px;
+  row-gap: 20px;
 }
 .heberg-offre {
   height: 180px;
-  width: 100%;
   min-width: 230px;
+  max-width: 400px;
   border-radius: 15px;
   border: 5px solid #fff;
   background-color: #fff;
@@ -269,7 +268,7 @@ header > nav > a {
   background-color: #f2f2f2;
   border-radius: 25px;
   padding: 40px;
-  margin-right: 90px;
+  margin-right: 10px;
 }
 .heberg-populaire-icon {
   font-size: 24px;
@@ -278,7 +277,7 @@ header > nav > a {
   height: 450px;
 }
 .heberg-populaire-offre {
-  width: 350px;
+  width: 100%;
   height: 130px;
   border-radius: 15px;
   border: 5px solid #fff;
@@ -446,5 +445,26 @@ header > nav > a {
   }
   .intro-filtre-name {
     flex: 100%;
+  }
+  /* HEBERGEMENT SECTION */
+  .hebergement {
+    margin-top: 0;
+    row-gap: 0;
+  }
+  .heberg-populaire {
+    border-radius: 0;
+    row-gap: 30px;
+  }
+  .heberg-populaire-offre-img {
+    width: 150px;
+  }
+  .heberg-principal {
+    background-color: transparent;
+  }
+  .heberg-offre {
+    width: 100%;
+  }
+  .heberg-principal {
+    height: 100%;
   }
 }
