@@ -75,37 +75,50 @@ header > nav > a {
 }
 .search {
   margin: 20px 0;
-  height: 45px;
+  height: 50px;
+  width: 450px;
+  border-radius: 16px;
   overflow: hidden;
 }
 .search > i {
-  height: 100%;
   background-color: #f2f2f2;
-  padding: 15px 20px;
-  border-radius: 16px 0 0 16px;
+  padding: 20px;
 }
 .search > input {
+  flex: 2;
   height: 100%;
-  margin: auto 0;
   border: 1px solid #f2f2f2;
+  border-right: 0;
   background-color: #fff;
   padding-left: 15px;
   font-size: 17px;
   font-weight: bold;
   color: black;
 }
+.intro-button {
+  flex: 1;
+  overflow: hidden;
+}
 .intro-button > button {
   background-color: #0065fc;
   color: #fff;
   font-size: 17px;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border: 0;
   border-radius: 0 16px 16px 0;
 }
 .intro-button > i {
   display: none;
-  padding: 20px;
+}
+.intro-button2 {
+  display: none;
+  position: absolute;
+  right: 30px;
+}
+.intro-button2 > button {
+  padding: 19px;
+  border: 0;
   border-radius: 16px;
   background-color: #0065fc;
   color: #fff;
@@ -408,13 +421,14 @@ header > nav > a {
   .introduction {
     padding: 30px;
   }
-  .intro-button > button {
+  .search {
+    margin: 20px auto;
+    width: 100%;
+  }
+  .intro-button {
     display: none;
   }
-  .intro-button > i {
+  .intro-button2 {
     display: flex;
-  }
-  .search {
-    justify-content: center;
   }
 }
