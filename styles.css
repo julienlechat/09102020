@@ -1,5 +1,8 @@
 /* GENERAL */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -11,16 +14,11 @@ body {
   padding: 0 50px;
 }
 h1 {
-  margin: 0;
   font-weight: bold;
 }
 h2 {
-  margin: 0;
   font-weight: bold;
   font-size: 22px;
-}
-p {
-  margin: 0;
 }
 
 /* FLEXBOX */
@@ -44,14 +42,14 @@ p {
 }
 
 /* HEADER */
-header {
-  height: 100px;
+.logo {
+  flex: 4;
 }
 header > nav {
   height: 100%;
 }
 header > nav > a {
-  padding: 40px;
+  padding: 40px 35px;
 }
 .header-link {
   border-top: 3px transparent solid;
@@ -65,25 +63,30 @@ header > nav > a {
   border-top: 3px solid #0065fc;
 }
 .header-register {
+  padding: 40px 35px;
   font-weight: bold;
   color: #0065fc;
   border-top: 3px transparent solid;
 }
 
 /* INTRODUCTION */
-#introduction > p {
+.introduction > p {
   margin-top: 10px;
 }
-#introduction > form {
+.search {
   margin: 20px 0;
   height: 45px;
+  overflow: hidden;
 }
-#introduction > form > i {
+.search > i {
+  height: 100%;
   background-color: #f2f2f2;
   padding: 15px 20px;
   border-radius: 16px 0 0 16px;
 }
-#introduction > form > input {
+.search > input {
+  height: 100%;
+  margin: auto 0;
   border: 1px solid #f2f2f2;
   background-color: #fff;
   padding-left: 15px;
@@ -91,7 +94,7 @@ header > nav > a {
   font-weight: bold;
   color: black;
 }
-#introduction > form > button {
+.intro-button > button {
   background-color: #0065fc;
   color: #fff;
   font-size: 17px;
@@ -100,55 +103,58 @@ header > nav > a {
   border: 0;
   border-radius: 0 16px 16px 0;
 }
-.categories {
+.intro-button > i {
+  display: none;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: #0065fc;
+  color: #fff;
+}
+.intro-filtre {
   margin: 35px 0;
-  height: 50px;
   max-width: 1000px;
 }
-.categorie-name {
+.intro-filtre-name {
   font-weight: bold;
   font-size: 19px;
   padding-left: 10px;
 }
-.cat-structure {
+.intro-filtre-button {
   border: 2px solid #f2f2f2;
+  background-color: #fff;
   border-radius: 25px;
 }
-.cat-structure:hover {
+.intro-filtre-button:hover {
   background-color: #f4f9ff;
   color: #0065fc;
 }
-.cat-icon {
-  height: 20px;
-  width: 20px;
+.intro-filtre-icon {
+  height: 22px;
+  width: 22px;
   background-color: #deebff;
   border-radius: 100%;
-  align-items: center;
-  justify-content: center;
   padding: 15px;
   margin: -2px;
 }
-.cat-icon > i {
+.intro-filtre-icon > i {
   color: #0065fc;
 }
-.cat-titre {
+.intro-filtre-titre {
   font-weight: bold;
   padding: 15px;
   padding-right: 20px;
 }
-.info-icon {
-  align-items: center;
-  justify-content: center;
+.intro-info-icon {
   height: 25px;
   width: 25px;
   border: 1px solid #f2f2f2;
   border-radius: 100%;
 }
-.info-icon > i {
+.intro-info-icon > i {
   font-size: 13px;
   color: #0065fc;
 }
-.info {
+.intro-info {
   margin: auto;
   margin-left: 15px;
 }
@@ -156,39 +162,44 @@ header > nav > a {
 /* HEBERGEMENT SECTION */
 .hebergement {
   margin-top: 35px;
+  column-gap: 20px;
+  overflow: hidden;
 }
 .heberg-principal {
   background-color: #f2f2f2;
   border-radius: 25px;
   padding: 40px;
   height: 510px;
-  width: 800px;
 }
-.heberg-list-offre {
+.heberg-list {
   height: 425px;
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  column-gap: 30px;
+  row-gap: 30px;
 }
 .heberg-offre {
-  width: 230px;
   height: 180px;
+  width: 100%;
+  min-width: 230px;
   border-radius: 15px;
   border: 5px solid #fff;
   background-color: #fff;
   box-shadow: 0 0 15px lightgray;
 }
 .heberg-offre-img {
-  border: 0;
-  padding: 0;
-  width: 100%;
-  height: 110px;
+  flex: auto;
+  position: relative;
 }
 .heberg-offre-img > img {
+  position: absolute;
   height: 100%;
   width: 100%;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
 }
 .heberg-offre-img-desc {
-  height: 70px;
+  height: 55px;
   padding: 10px 5px 5px 10px;
 }
 .heberg-offre-img-desc > span {
@@ -240,7 +251,7 @@ header > nav > a {
   background-color: #f2f2f2;
   border-radius: 25px;
   padding: 40px;
-  width: 360px;
+  margin-right: 90px;
 }
 .heberg-populaire-icon {
   font-size: 24px;
@@ -338,4 +349,72 @@ header > nav > a {
 }
 .activity-50 {
   height: 200px;
+}
+/* ************* */
+/* MODE TABLETTE */
+/* ************* */
+@media (max-width: 1440px) {
+  .hebergement {
+    row-gap: 20px;
+    flex-direction: column-reverse;
+  }
+  .heberg-populaire {
+    margin-right: 0;
+  }
+}
+/***************/
+/* MODE MOBILE */
+/***************/
+@media (max-width: 600px) {
+  body {
+    padding: 0;
+  }
+  /* HEADER */
+  header {
+    height: 100%;
+    flex-wrap: wrap;
+  }
+  header > nav {
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+  }
+  .logo {
+    padding-left: 40px;
+    order: -2;
+  }
+  .header-link:first-child {
+    border-top: 0;
+    border-bottom: 3px solid #0065fc;
+  }
+  .header-link {
+    width: 50%;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    border-top: 0;
+    border-bottom: 3px solid #f2f2f2;
+  }
+  .header-link:hover {
+    border-top: 0;
+    border-bottom: 3px solid #0065fc;
+  }
+  .header-register {
+    padding-right: 40px;
+    order: -1;
+    font-size: 20px;
+  }
+  /* INTRO */
+  .introduction {
+    padding: 30px;
+  }
+  .intro-button > button {
+    display: none;
+  }
+  .intro-button > i {
+    display: flex;
+  }
+  .search {
+    justify-content: center;
+  }
 }
