@@ -7,13 +7,13 @@ a {
   text-decoration: none;
   color: inherit;
 }
+body {
+  font-family: "Raleway", "Sans serif";
+  margin: auto;
+}
 main {
   padding: 0 50px;
   max-width: 1440px;
-  margin: auto;
-}
-body {
-  font-family: "Raleway", "Sans serif";
   margin: auto;
 }
 h1 {
@@ -23,7 +23,6 @@ h2 {
   font-weight: bold;
   font-size: 22px;
 }
-
 /* FLEXBOX */
 .f {
   display: flex;
@@ -43,7 +42,6 @@ h2 {
 .f-wrap {
   flex-wrap: wrap;
 }
-
 /* HEADER */
 .logo {
   flex: 4;
@@ -207,7 +205,7 @@ header > nav > a {
   min-width: 230px;
   max-width: 400px;
   border-radius: 15px;
-  border: 5px solid #fff;
+  border: 5px solid transparent;
   background-color: #fff;
   box-shadow: 0 0 15px lightgray;
 }
@@ -282,7 +280,7 @@ header > nav > a {
 .heberg-populaire-offre {
   height: 130px;
   border-radius: 15px;
-  border: 5px solid #fff;
+  border: 5px solid transparent;
   background-color: #fff;
   box-shadow: 0 0 15px lightgray;
 }
@@ -419,6 +417,9 @@ footer {
     width: auto;
     padding: 20px;
   }
+  .heberg-principal > h2 {
+    margin-top: 10px;
+  }
   .heberg-principal > a {
     margin-top: 20px;
   }
@@ -431,6 +432,9 @@ footer {
     row-gap: 30px;
     margin-right: 0;
     height: 100%;
+  }
+  .heberg-populaire > div > h2 {
+    margin-top: 10px;
   }
   .heberg-populaire-offre-img {
     width: 150px;
@@ -445,7 +449,6 @@ footer {
     flex-direction: column-reverse;
   }
 }
-
 /***************/
 /* MODE MOBILE */
 /***************/
