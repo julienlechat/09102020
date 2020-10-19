@@ -345,7 +345,10 @@ footer {
   padding: 50px 0;
   background-color: #f2f2f2;
   justify-content: space-around;
+}
+.bloc-footer {
   max-width: 1440px;
+  margin: auto;
 }
 .cat-footer {
   row-gap: 10px;
