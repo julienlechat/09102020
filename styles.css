@@ -348,6 +348,7 @@ footer {
 .bloc-footer {
   max-width: 1440px;
   margin: auto;
+  justify-content: space-around;
 }
 .cat-footer {
   row-gap: 10px;
